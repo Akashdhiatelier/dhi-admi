@@ -1,0 +1,814 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "admin@mailinator.com",
+      "password": "admin123",
+      "status": "Active",
+      "rolesId": 1,
+      "avatar": "data:image/jpeg;base64,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"
+    },
+    {
+      "id": 2,
+      "first_name": "Sarina",
+      "last_name": "Reilly",
+      "email": "sreilly1@stumbleupon.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 3,
+      "first_name": "Staffard",
+      "last_name": "Limpenny",
+      "email": "slimpenny2@myspace.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 4,
+      "first_name": "Cynthia",
+      "last_name": "Mizzi",
+      "email": "cmizzi3@columbia.edu",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 5,
+      "first_name": "Erminia",
+      "last_name": "Kilcullen",
+      "email": "ekilcullen4@toplist.cz",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 6,
+      "first_name": "Bertie",
+      "last_name": "Gailor",
+      "email": "bgailor5@washington.edu",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 7,
+      "first_name": "Somerset",
+      "last_name": "M'Quhan",
+      "email": "smquhan6@wisc.edu",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 8,
+      "first_name": "Chuck",
+      "last_name": "Cabane",
+      "email": "ccabane7@ebay.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 9,
+      "first_name": "Scarface",
+      "last_name": "Tregido",
+      "email": "stregido8@skype.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 10,
+      "first_name": "Anthea",
+      "last_name": "Di Pietro",
+      "email": "adipietro9@upenn.edu",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 11,
+      "first_name": "Silvia",
+      "last_name": "McMinn",
+      "email": "smcminna@bandcamp.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 12,
+      "first_name": "Lilith",
+      "last_name": "Birchenough",
+      "email": "lbirchenoughb@salon.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 13,
+      "first_name": "Lemmie",
+      "last_name": "Hingeley",
+      "email": "lhingeleyc@themeforest.net",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 14,
+      "first_name": "Laura",
+      "last_name": "Edling",
+      "email": "ledlingd@live.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 15,
+      "first_name": "Toby",
+      "last_name": "Prium",
+      "email": "tpriume@irs.gov",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 16,
+      "first_name": "Warden",
+      "last_name": "Bawcock",
+      "email": "wbawcockf@tinypic.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 17,
+      "first_name": "Florrie",
+      "last_name": "Goolding",
+      "email": "fgooldingg@meetup.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 18,
+      "first_name": "Saloma",
+      "last_name": "Huffadine",
+      "email": "shuffadineh@surveymonkey.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 19,
+      "first_name": "Thorin",
+      "last_name": "Listone",
+      "email": "tlistonei@php.net",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 20,
+      "first_name": "Thedrick",
+      "last_name": "Roger",
+      "email": "trogerj@state.gov",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 21,
+      "first_name": "Leoline",
+      "last_name": "Eyers",
+      "email": "leyersk@twitpic.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 22,
+      "first_name": "Faun",
+      "last_name": "Braywood",
+      "email": "fbraywoodl@psu.edu",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 23,
+      "first_name": "Nomi",
+      "last_name": "MacLaverty",
+      "email": "nmaclavertym@biglobe.ne.jp",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 24,
+      "first_name": "Caren",
+      "last_name": "Bentham",
+      "email": "cbenthamn@wired.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 25,
+      "first_name": "Mordecai",
+      "last_name": "Lovatt",
+      "email": "mlovatto@ifeng.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 26,
+      "first_name": "Skippy",
+      "last_name": "Tockell",
+      "email": "stockellp@zdnet.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 27,
+      "first_name": "Lanny",
+      "last_name": "Donnelly",
+      "email": "ldonnellyq@mapy.cz",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 28,
+      "first_name": "Owen",
+      "last_name": "Gerriessen",
+      "email": "ogerriessenr@businesswire.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 29,
+      "first_name": "Abdul",
+      "last_name": "Weare",
+      "email": "aweares@blinklist.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 30,
+      "first_name": "Bonnee",
+      "last_name": "Tommeo",
+      "email": "btommeot@is.gd",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 31,
+      "first_name": "Zebadiah",
+      "last_name": "Iannazzi",
+      "email": "ziannazziu@i2i.jp",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 32,
+      "first_name": "Laney",
+      "last_name": "Dusey",
+      "email": "lduseyv@163.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 33,
+      "first_name": "Garald",
+      "last_name": "Hance",
+      "email": "ghancew@skyrock.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 34,
+      "first_name": "Cloris",
+      "last_name": "Shrubsall",
+      "email": "cshrubsallx@princeton.edu",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 35,
+      "first_name": "Neal",
+      "last_name": "Petyt",
+      "email": "npetyty@dailymotion.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 36,
+      "first_name": "Marney",
+      "last_name": "Beaves",
+      "email": "mbeavesz@who.int",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 37,
+      "first_name": "Devan",
+      "last_name": "Bermingham",
+      "email": "dbermingham10@etsy.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 38,
+      "first_name": "Sunshine",
+      "last_name": "Kiernan",
+      "email": "skiernan11@youtube.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 39,
+      "first_name": "Cam",
+      "last_name": "Aird",
+      "email": "caird12@google.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 40,
+      "first_name": "Sullivan",
+      "last_name": "Ginner",
+      "email": "sginner13@facebook.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 41,
+      "first_name": "Yvon",
+      "last_name": "Margaritelli",
+      "email": "ymargaritelli14@go.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 42,
+      "first_name": "Michelle",
+      "last_name": "Willas",
+      "email": "mwillas15@ask.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 43,
+      "first_name": "Bram",
+      "last_name": "Mingame",
+      "email": "bmingame16@pcworld.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 44,
+      "first_name": "Sheba",
+      "last_name": "Brookesbie",
+      "email": "sbrookesbie17@artisteer.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 45,
+      "first_name": "Aurilia",
+      "last_name": "Andrin",
+      "email": "aandrin18@zimbio.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 46,
+      "first_name": "Jade",
+      "last_name": "Hewes",
+      "email": "jhewes19@spotify.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 47,
+      "first_name": "Rheba",
+      "last_name": "Quince",
+      "email": "rquince1a@spotify.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 48,
+      "first_name": "Der",
+      "last_name": "Premble",
+      "email": "dpremble1b@hubpages.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 49,
+      "first_name": "Row",
+      "last_name": "Mussington",
+      "email": "rmussington1c@bbb.org",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 50,
+      "first_name": "Reiko",
+      "last_name": "Sear",
+      "email": "rsear1d@scribd.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 51,
+      "first_name": "Freddi",
+      "last_name": "Danat",
+      "email": "fdanat1e@time.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 52,
+      "first_name": "Krissy",
+      "last_name": "Overpool",
+      "email": "koverpool1f@utexas.edu",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 53,
+      "first_name": "Josefina",
+      "last_name": "Baty",
+      "email": "jbaty1g@over-blog.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 54,
+      "first_name": "Abbie",
+      "last_name": "Armitt",
+      "email": "aarmitt1h@timesonline.co.uk",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 55,
+      "first_name": "Steffie",
+      "last_name": "Hedgecock",
+      "email": "shedgecock1i@omniture.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 56,
+      "first_name": "Briny",
+      "last_name": "Chesshyre",
+      "email": "bchesshyre1j@meetup.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 57,
+      "first_name": "Tulley",
+      "last_name": "Jantzen",
+      "email": "tjantzen1k@istockphoto.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 58,
+      "first_name": "Norman",
+      "last_name": "Rickaert",
+      "email": "nrickaert1l@apple.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 59,
+      "first_name": "Nester",
+      "last_name": "Bresnahan",
+      "email": "nbresnahan1m@webmd.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 60,
+      "first_name": "Margo",
+      "last_name": "Paumier",
+      "email": "mpaumier1n@usgs.gov",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 61,
+      "first_name": "Charlie",
+      "last_name": "Mustard",
+      "email": "cmustard1o@ca.gov",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 62,
+      "first_name": "Betsy",
+      "last_name": "Kalkhoven",
+      "email": "bkalkhoven1p@icio.us",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    },
+    {
+      "id": 63,
+      "first_name": "Marve",
+      "last_name": "Gradly",
+      "email": "mgradly1q@ovh.net",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 64,
+      "first_name": "Liz",
+      "last_name": "Skillicorn",
+      "email": "lskillicorn1r@intel.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 65,
+      "first_name": "Ki",
+      "last_name": "Hinchcliffe",
+      "email": "khinchcliffe1s@auda.org.au",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 66,
+      "first_name": "Kevin",
+      "last_name": "Gatfield",
+      "email": "kgatfield1t@pinterest.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 67,
+      "first_name": "Lesley",
+      "last_name": "Strase",
+      "email": "lstrase1u@friendfeed.com",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 3
+    },
+    {
+      "id": 68,
+      "first_name": "Lettie",
+      "last_name": "Greenhaugh",
+      "email": "lgreenhaugh1v@angelfire.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 3
+    },
+    {
+      "id": 69,
+      "first_name": "Katharyn",
+      "last_name": "Marshal",
+      "email": "kmarshal1w@i2i.jp",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 70,
+      "first_name": "Morgana",
+      "last_name": "Edridge",
+      "email": "medridge1x@github.com",
+      "password": "admin",
+      "status": "Active",
+      "rolesId": 2
+    },
+    {
+      "id": 71,
+      "first_name": "Tedmund",
+      "last_name": "Cazereau",
+      "email": "tcazereau1y@miibeian.gov.cn",
+      "password": "admin",
+      "status": "Inactive",
+      "rolesId": 2
+    }
+  ],
+  "roles": [
+    {
+      "role": "superadmin",
+      "status": "Active",
+      "permission": [
+        {
+          "module": "Dashboard",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Users",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Categories",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Materials",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Models",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Projects",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Role & Permission",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "My Profile",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Settings",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        }
+      ],
+      "id": 1
+    },
+    {
+      "role": "admin",
+      "status": "Active",
+      "permission": [
+        {
+          "module": "Dashboard",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Users",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Categories",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Materials",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Models",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        },
+        {
+          "module": "Projects",
+          "read": true,
+          "write": true,
+          "update": true,
+          "delete": true
+        }
+      ],
+      "id": 2
+    },
+    {
+      "role": "Customer",
+      "status": "Active",
+      "permission": [
+        {
+          "module": "Dashboard",
+          "read": true,
+          "write": false,
+          "update": false,
+          "delete": false
+        },
+        {
+          "module": "Users",
+          "read": false,
+          "write": false,
+          "update": false,
+          "delete": false
+        },
+        {
+          "module": "Categories",
+          "read": true,
+          "write": false,
+          "update": false,
+          "delete": false
+        },
+        {
+          "module": "Materials",
+          "read": true,
+          "write": false,
+          "update": false,
+          "delete": false
+        },
+        {
+          "module": "Models",
+          "read": true,
+          "write": false,
+          "update": false,
+          "delete": false
+        },
+        {
+          "module": "Projects",
+          "read": true,
+          "write": false,
+          "update": false,
+          "delete": false
+        }
+      ],
+      "id": 3
+    }
+  ]
+}
